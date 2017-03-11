@@ -12,7 +12,7 @@ package ar.com.educacionit.vehiculos.util;
  */
 public enum CONSTANTES {
     
-    UBICACION_RECURSOS("/ar/com/educacionit/vehiculos/recursos/"),
+    UBICACION_RECURSOS("ar/com/educacionit/vehiculos/recursos/"),
     COMBO_SIN_SELECCION("Seleccione...");
     
     private String valor;
