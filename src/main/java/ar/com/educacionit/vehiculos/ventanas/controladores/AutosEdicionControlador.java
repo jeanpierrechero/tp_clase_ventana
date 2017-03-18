@@ -65,6 +65,7 @@ public class AutosEdicionControlador extends EdicionControlador {
         fld_precio.setTooltip(new Tooltip("Precio"));
         txt_equipamiento.setTooltip(new Tooltip("Equipamiento"));
 
+        //Para que los campos sean numericos
         agregarCampoNumerico(fld_alto);
         agregarCampoNumerico(fld_largo);
         agregarCampoNumerico(fld_ancho);

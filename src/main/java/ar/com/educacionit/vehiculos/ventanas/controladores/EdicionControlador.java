@@ -86,7 +86,7 @@ public abstract class EdicionControlador extends ConcesionariaControlador implem
     private void validacionNumerica(Control control) {
         if (control instanceof TextField) {
             TextField c = (TextField) control;
-            c.setPromptText("Solo números");
+            c.setPromptText("Solo numeros");
             c.textProperty().addListener(new ChangeListener<String>() {
                 @Override
                 public void changed(final ObservableValue<? extends String> observable, final String oldValue, final String newValue) {

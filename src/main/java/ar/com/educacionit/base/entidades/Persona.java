@@ -56,5 +56,13 @@ public abstract class Persona {
     public void setNumeroDocumento(String numeroDocumento) {
         this.numeroDocumento.set(numeroDocumento);
     }
+    
+    public StringProperty nombreProperty(){
+        return nombre;
+    }
+    
+    public StringProperty documentoProperty(){
+        return numeroDocumento;
+    }
 
 }

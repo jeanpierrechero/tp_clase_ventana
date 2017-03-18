@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.com.educacionit.vehiculos.ventanas.controladores.CompradoresEdicionControlador">
    <children>
       <GridPane layoutX="2.0" prefHeight="132.0" prefWidth="493.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
@@ -21,22 +24,22 @@
             <Label text="Apellido:" GridPane.rowIndex="1" />
             <Label text="Nro. de documento:" GridPane.rowIndex="2" />
             <Label text="Presupuesto:" GridPane.rowIndex="3" />
-            <TextField GridPane.columnIndex="1">
+            <TextField fx:id="fld_nombre" GridPane.columnIndex="1">
                <GridPane.margin>
                   <Insets left="5.0" right="5.0" />
                </GridPane.margin>
             </TextField>
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <TextField fx:id="fld_apellido" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets left="5.0" right="5.0" />
                </GridPane.margin>
             </TextField>
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <TextField fx:id="fld_documento" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets left="5.0" right="5.0" />
                </GridPane.margin>
             </TextField>
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <TextField fx:id="fld_presupuesto" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets left="5.0" right="5.0" />
                </GridPane.margin>
@@ -45,7 +48,7 @@
       </GridPane>
       <HBox layoutX="375.0" layoutY="311.0" spacing="3.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
          <children>
-            <Button layoutX="375.0" layoutY="311.0" mnemonicParsing="false" prefWidth="75.0" text="OK" />
+            <Button fx:id="btn_ok" layoutX="375.0" layoutY="311.0" mnemonicParsing="false" onAction="#btnOkPresionado" prefWidth="75.0" text="OK" />
             <Button fx:id="btn_cancel" layoutX="434.0" layoutY="311.0" mnemonicParsing="false" onAction="#cerrarVentana" prefWidth="75.0" text="Cancel" />
          </children>
       </HBox>
