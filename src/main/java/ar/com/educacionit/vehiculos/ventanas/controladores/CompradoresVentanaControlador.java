@@ -95,8 +95,8 @@ public class CompradoresVentanaControlador extends ConcesionariaControlador impl
             this.lbl_documento_valor.setText("");
             this.lbl_presupuesto_valor.setText("");
         }
-        btn_editar.setDisable(false);
-        btn_borrar.setDisable(false);
+        btn_edit.setDisable(false);
+        btn_delete.setDisable(false);
     }
     
     private void llenarTablaDeCompradores() {
